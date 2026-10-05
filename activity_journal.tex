@@ -32,6 +32,14 @@
     \item \textcolor{blue}{Il faudra faire de même pour le soleil et la température et ensuite établir une corrélation (ou pas) entre les deux gradeurs}
 \end{itemize}
 
+\paragraph{Lundi 5 octobre.} Production d'un ``toy'' code pour les données relatives au vent et à l'ensoleillement. 
+\begin{itemize}
+    \item Inspiration d'un code mis à disposition \href{https://github.com/MeteoSwiss/opendata/blob/main/notebooks/MonthlyMeanGlobalRadiation_HAI.ipynb}{\textcolor{blue}{ici}} sur le GitHub MeteoSwiss. 
+    \item ``toy'' code: importation + cleaning des données de la station ``ABO'' (station 1 sur 158) et production d'un graphique (vitesse moyenne du temps du début des relevé à aujourd'hui). Ce code sert maintenant de base pour la production de davantage de statistiques descriptives (tendances de long terme, anomalies, comparaisons entre stations, \textit{etc}.). Le code se focalise sur la dimension ``vent'', pas solaire, mais sert de benchmark pour les code futurs, qu'importe la variable d'intérêt. 
+    \item \textcolor{blue}{Idée :} On pourrait envisager des créer une carte des localisation optimales pour les éoliennes. On recueille les données importantes (direction, vitesse moyennes, rafales modérées) puis imposer des seuils (notamment pour la vitesse moyenne et les rafales) pour savoir autour de quelles stations il serait avantageux de construire des éoliennes.
+    \item Production d'un code pour la partie solaire, basé sur le code précédent pour préparer l'analyse de corrélation entre ensoleillement et vitesse du vent.
+    \item Push sur GitHub des productions de la journée.
+\end{itemize}
 
 
 \end{document}
