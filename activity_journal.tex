@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsfonts, amsmath, amssymb, amsthm}
+
+\begin{document}
+
+\begin{center}
+    {\bfseries\large Journal de bord -- Predoc HEG Genève} \\[0.2cm]
+    {\small Lubin Bénéteau}\\[0.2cm]
+    {\small 2026 -- 2027}
+\end{center}
+
+\section*{Octobre}
+
+\paragraph{Jeudi 1\textsuperscript{er} octobre.} Arrivée à la HEG, récupération du matériel informatique et carte d'accès. Réunion en début d'après midi avec Prof. Weber pour établir les premières consignes. 
+\begin{itemize}
+    \item Préparation d'un workflow (exploration des données météo $\longrightarrow$ sélection des variables pertinentes (relatives aux vents d'abord, puis celles du soleil et de la température, coordonnées des stations pour création de cartes des vents) $\longrightarrow$ création d'un large dataset $\longrightarrow$ analyse descriptives du dataset.
+    \item extraction depuis \href{https://www.meteosuisse.admin.ch/services-et-publications/service/open-data.html#ogd-kw=Vent&ogd-q=&ogd-cat=&ogd-fmt=}{\textcolor{blue}{ici}} et \href{https://github.com/MeteoSwiss/opendata/tree/main/metadata-files}{\textcolor{blue}{là}} des meta paramètres pour une explication et sélection des variables pertinentes pour la production d'énergie éolienne. Code ne Python. 
+    \item Création d'un repo Github (\href{https://github.com/LeLubb/Predoc-HEG/tree/main}{\textcolor{blue}{ici}}) pour monitorer mon avancement dans mon travail.
+\end{itemize}
+
+\paragraph{Vendredi 2 octobre.} Avancement sur le code
+\begin{itemize}
+    \item Sélection des variables pertinentes pour le vent (implique lecture sur les types de vents dans la production électrique éolienne).
+    \begin{itemize}
+        \item Compréhension des mécanismes de création du vent.
+        \item Application au cas de la Suisse.
+        \item Sélection finale des variables.
+    \end{itemize}
+    \item Construction d'une base de donnée csv avec python. Utilisation du site Open Data de MétéoSuisse. Rassemblement des différentes stations. Merge de différents types de timming. Merge des stations.
+    \item \textcolor{blue}{Il faudra faire de même pour le soleil et la température et ensuite établir une corrélation (ou pas) entre les deux gradeurs}
+\end{itemize}
+
+\paragraph{Lundi 5 octobre.} Production d'un ``toy'' code pour les données relatives au vent et à l'ensoleillement. 
+\begin{itemize}
+    \item Inspiration d'un code mis à disposition \href{https://github.com/MeteoSwiss/opendata/blob/main/notebooks/MonthlyMeanGlobalRadiation_HAI.ipynb}{\textcolor{blue}{ici}} sur le GitHub MeteoSwiss. 
+    \item ``toy'' code: importation + cleaning des données de la station ``ABO'' (station 1 sur 158) et production d'un graphique (vitesse moyenne du temps du début des relevé à aujourd'hui). Ce code sert maintenant de base pour la production de davantage de statistiques descriptives (tendances de long terme, anomalies, comparaisons entre stations, \textit{etc}.). Le code se focalise sur la dimension ``vent'', pas solaire, mais sert de benchmark pour les code futurs, qu'importe la variable d'intérêt. 
+    \item \textcolor{blue}{Idée :} On pourrait envisager des créer une carte des localisation optimales pour les éoliennes. On recueille les données importantes (direction, vitesse moyennes, rafales modérées) puis imposer des seuils (notamment pour la vitesse moyenne et les rafales) pour savoir autour de quelles stations il serait avantageux de construire des éoliennes.
+    \item Production d'un code pour la partie solaire, basé sur le code précédent pour préparer l'analyse de corrélation entre ensoleillement et vitesse du vent.
+    \item Push sur GitHub des productions de la journée.
+\end{itemize}
+
+\paragraph{Mardi 6 octobre:} Production d'un code agrégé.
+\begin{itemize}
+    \item En utilisant les codes précédent, j'ai produit des graphiques et des matrices de corrélation entre \texttt{radiation} et \texttt{mean\_wind\_speed}\footnote{Je dois ajouter les corrélations de Spearman comme utilisées dans \cite{cauz2025embracing}}. 
+    \item J'analyse aussi la fréquence (via courbe de densité) à laquelle le vent souffle et le soleil rayonne. J'introduis dans les graphiques des seuils de production (et d'arrêt) pour l'éolien et le solaire.
+    \item Je complète \texttt{documentation.tex} en ajoutant des éléments concernant les variables pertinentes pour l'analyse de la production électrique solaire (radiation, durée d'ensoileillement, orientation).
+\end{itemize}
+
+
+\end{document}
