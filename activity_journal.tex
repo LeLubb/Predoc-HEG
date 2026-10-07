@@ -1,6 +1,23 @@
-\documentclass{article}
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[a4paper]{geometry}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{capt-of} % for \captionof outside floats
+\usepackage{xcolor} % for \textcolor
 \usepackage{hyperref}
-\usepackage{xcolor}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\usepackage{amsthm, amsmath, amssymb}
+\usepackage{natbib}
 
 
 \begin{document}
@@ -47,6 +64,18 @@
     \item J'analyse aussi la fréquence (via courbe de densité) à laquelle le vent souffle et le soleil rayonne. J'introduis dans les graphiques des seuils de production (et d'arrêt) pour l'éolien et le solaire.
     \item Je complète \texttt{documentation.tex} en ajoutant des éléments concernant les variables pertinentes pour l'analyse de la production électrique solaire (radiation, durée d'ensoileillement, orientation).
 \end{itemize}
+
+\paragraph{Mercredi 7 octobre.} Vérifications des résultats de \citet{cauz2025embracing}.
+\begin{itemize}
+    \item Reprise des codes précédents. Isolation mean speed wind sur la période 2015---2025 pour toutes les stations Suisses.
+    \item Production de Graphiques visuellement parlant (notamment une heatmap et des bar charts).
+    \item Production d'un pdf à destination de Tonio (disponible \href{https://github.com/LeLubb/Predoc-HEG/blob/main/Code/toy_code/sides_analysis/Wind_seasonality.pdf}{\textcolor{blue}{ici}}.
+\end{itemize}
+
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{Meteo_Suisse/ressources}
 
 
 \end{document}
