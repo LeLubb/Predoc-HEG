@@ -88,6 +88,23 @@
     \item Début de rédaction de \texttt{complementarity\_analysis.tex}, contexte, intro, explications, résultats, annexes. 
 \end{itemize}
 
+\paragraph{Lundi 12 octobre.} RDV avec Syvlain et ajustement de la stratégie pour le travail de corrélation vent -- solaire.
+\begin{itemize}
+    \item Utilisation de régressions pour repérer les sous ensembles de stations favorisant une corrélation négative.
+    \item Modification du code initial pour introduire de nouvelles variables (latitude, longitude, altitude, température, etc.)
+    \item production de plusieurs sous ensembles a caractères géographiques et isolation des variables et sous ensembles de varaibles des stations favoriant une corrlation négative. 
+\end{itemize}
+
+\paragraph{Mardi 13 octobre.} Exploration de variables explicatives de complémentarité vent-radiation.
+\begin{itemize}
+    \item Repérage des zones: N,S,E,W avec le Nord davantage venteux.
+    \item Repérage temporel: l'hiver couve les mois les plus venteux (à faire: explorer les variations dans la radiation)
+    \item Repérage par altitude: au delà de 1200, on trouve des vents plus forts en moyenne. 
+    \item Explorations des corrélation avec des seuils à 3 m/s et 100 W/$m^2$.
+    \item Tentatives de représentations par altitudes, par mois, par zones septentrionales avec et sans seuils. 
+    \item Étape suivante: préparer un terrain descriptifs pour le vent, avec représentations visuels (graphiques, heatmap et potentielle carte avec stations). Et rédiger une première analyses des résultats de la journée. Résultats stockés dans \texttt{win\_solar\_results.ipynb}
+\end{itemize}
+
 
 \clearpage
 \bibliographystyle{plainnat}
