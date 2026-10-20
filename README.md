@@ -4,4 +4,4 @@ This repo will help me and my supervisor to monitor my work at HEG - Genève (pa
 
 A first work study seasonality in wind speeds across Switzerland.
 
-A second and ongoing work study the complementarity between wind speeds and solar radiation.
+A second (ongoing) work study the complementarity between wind speeds and solar radiations across Swiss accounting for elevation, geographic areas, and time period. 
