@@ -128,6 +128,35 @@
     \item Finalisation du document de \texttt{documentation.tex}.
 \end{itemize}
 
+\paragraph{Lundi 19 octobre.} Ajout d'un subdataset dans le code. 
+\begin{itemize}
+    \item Je renomme les deux datasets précédents : \texttt{FULL} et \texttt{AND}.
+    \item Je créé un autre dataset (sous--échantillon de \texttt{FULL}) : \texttt{OR} (au moins \texttt{mean\_wind\_speed} ou \texttt{solar\_radiation} est au dessus de son seuil). Permet une étude plus complète de la cimplémentarité.
+    \item Construction et reconstruction de figures : par zones géographiques (Nord, Sud, Est, Ouest), par temporalité (heure, jour, mois), par altitute (moins de 400 ; 400--800 ; 800 -- 1200 ; plus de 1200) ; par saisons et par mois. 
+    \item Aggrégation des figures pour les 3 datasets pour les analyses et sous analyses conditionnelles sur des caratérisques précises (celles précisées juste au dessus). Inclu des heatmaps, des courbes, des tableaux. Inclu résultats de régressions et de corrélation de Spearman et de Pearson.
+    \item Re structuration du draft avec ajout de ramification concernant le nouveau sous échantillon \texttt{OR}
+\end{itemize}
+
+\paragraph{Mardi 20 octobre.} Reprise de la rédaction du \texttt{draft\_1} avec une nouvelle version (car ajout de subsections et modificatio des annexes et figures centrales).
+\begin{itemize}
+    \item Reprise de l'intro, de l'ensemble des sections du plan car ajout du sous échantillon \texttt{OR}. Inclu la suppréssion et rajout des heatmaps par sous échantillons, rajout des tables agrégées (statistiques descritptives agrégéées, régressions, corrélations).
+    \item Relecture de la nouvelles structure et des parahraphes repris uns à uns et ligne par ligne. 
+\end{itemize}
+
+\paragraph{Mercredi 21 octobre.} RDV avec Prof. Weber pour un point sur les \texttt{draft\_0} et \texttt{draft\_1}. 
+\begin{itemize}
+    \item Suppréssion des sous échantillons \texttt{OR} et \texttt{AND} pour leur non informativité. 
+    \item Début d'un travail sur des données longues (1980--2025) pour le vent et les radiations. 
+    \item Production de graphiques et observation d'un tendance de long terme + prise en compte de la saisonalité. 
+\end{itemize}
+
+\paragraph{Jeudi 22 octobre.} Travail sur données longues daily et monthly 1980--2025. 
+\begin{itemize}
+    \item Observation des tendences moyennes de long terme par années via une analyse temporelle (e.g. \href{https://otexts.com/fpppy/02-graphics.html#sec-DataFrame}{\textcolor{blue}{fpppy}})
+    \item Établissement d'une règle de \textit{drop} des outliers (dysfonctionnements par stations).
+    \item Ségrégation des données par zones géographiques, par altitudes et par saisons.
+    \item Production de graphiques comparables avec données journalières et mensuelles. 
+\end{itemize}
 
 
 \clearpage
