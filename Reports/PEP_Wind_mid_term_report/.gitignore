@@ -1,0 +1,17 @@
+# Temporary LaTeX output and document previews
+/build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Local system and editor temporary files
+.DS_Store
+~$*.docx

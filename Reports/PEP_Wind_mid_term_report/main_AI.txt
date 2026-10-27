@@ -1,0 +1,23 @@
+Mid-Term Report
+
+Lubin Bénéteau
+
+October 27, 2026
+
+1 Introduction
+
+Solar and wind power are variable energy sources, which can pose challenges for electricity supply at the national level. Complementarity between wind and solar photovoltaic (PV) generation could help mitigate this variability by reducing fluctuations in their combined output. In this study, we investigate complementarity between wind and solar resources using observations of wind speed and solar radiation.
+
+We use publicly available meteorological data from MeteoSwiss, with observations available at 10-minute, daily, monthly, and annual intervals for most stations across Switzerland. To assess the potential for complementarity between wind and PV generation, we use mean wind speed, measured in metres per second, and mean solar radiation, measured in watts per square metre. These variables characterise the resources available to the two technologies.
+
+In our dataset, mean wind speed observations date back to 1864, when records were available for only four stations. The number of stations increased to 72 in 1980 and 146 in 2025. Mean solar radiation observations began in 1981 at 45 stations, increasing to 129 stations in 2025. For the 1980–2025 analysis, we use a fixed set of stations to ensure consistency over time. This provides more limited spatial coverage than the 2015–2025 analysis, for which data on both wind speed and solar radiation are available from 124 stations across Switzerland.
+
+Figure 1 shows mean wind speed and mean solar radiation over the period 2015–2025. For each variable, we retain as many observations as possible from 2015 onwards.
+
+Figure 1: Mean wind speed (left) and mean solar radiation (right), 2015–2025.
+
+We aim to assess complementarity between wind and solar resources and its potential implications for electricity generation. Following Canales et al. (2019), we will use correlation measures, complemented by descriptive statistics. Using daily and monthly data, we will examine seasonal patterns and compare complementarity across elevation classes and geographical areas.
+
+References
+
+Fausto A. Canales, Jakub Jurasz, Alexandre Beluco, and Alexander Kies. Assessing temporal complementarity between three variable energy sources by means of correlation and compromise programming. arXiv, 2019. doi: 10.1016/j.energy.2019.116637.
