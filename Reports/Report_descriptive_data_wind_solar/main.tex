@@ -19,7 +19,6 @@
 \renewcommand{\arraystretch}{1.15}
 \hypersetup{pdftitle={Wind and solar radiation in Switzerland: data description}}
 
-% Each PNG is copied directly from a saved output of main_code_V4.ipynb.
 \newcommand{\savedfigure}[3]{%
   \begin{figure}[H]
     \centering
@@ -33,6 +32,10 @@
 {\LARGE Wind and Solar Radiation in Switzerland\par}
 \vspace{0.4em}
 {\large A brief description of measurements\par}
+\vspace{0.4em}
+{\small Lubin Bénéteau\par}
+\vspace{0.4em}
+{\today}
 \end{center}
 
 \section{Data and methods}
@@ -59,8 +62,6 @@ Period in saved output & Wind-stable & Solar-stable & Stable for both \\
 \caption{Counts of observartion across sub datasets.}
 \end{table}
 
-% Monthly profiles and maps from the saved outputs of main_code_V4.ipynb.
-% Within each subsection: 1980--2025, 2015--2025, then the paired map.
 \clearpage
 \section{Monthly seasonal profiles}
 \label{sec:monthly-historical}
@@ -97,8 +98,6 @@ Period in saved output & Wind-stable & Solar-stable & Stable for both \\
 
 \begin{figure}[H]
   \centering
-  % Replace only the French title strip in the saved PNG with English titles.
-  % At the source resolution (100 dpi), 21.6 bp corresponds to 30 pixels.
   {\sffamily\fontsize{8}{10}\selectfont
    \makebox[0.5\linewidth]{Stable stations -- 1980--2025 -- 42 stations}%
    \makebox[0.5\linewidth]{Stable stations -- 2015--2025 -- 123 stations}\par}
